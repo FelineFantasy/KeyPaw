@@ -31,7 +31,8 @@ def handle_key(event):
 keyboard.hook(handle_key)
 
 os.system('cls' if os.name == 'nt' else 'clear')
-print("Пианино готово! Нажимай цифры 1-7.")
+print("🎹 Пианино готово! Нажимай цифры 1-7.")
+print("Стрелки и другие клавиши свободны!")
 
 while True:
     pass
