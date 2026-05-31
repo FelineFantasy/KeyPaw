@@ -1,4 +1,5 @@
 import os
+import sys
 import keyboard
 from pygame import mixer
 
@@ -22,17 +23,32 @@ keymap = {
     "7": si,
 }
 
+running = True
+
 def handle_key(event):
-    if event.event_type != 'down' or event.name not in keymap:
-        return
-    keymap[event.name].play()
+    global running
+    
+    if event.event_type != 'down':
+        return False
+    
+    if event.name == 'esc':
+        print("\nВыход из пианино...")
+        running = False
+        return False
+    
+    if event.name in keymap:
+        keymap[event.name].play()
+    
     return False
 
 keyboard.hook(handle_key)
 
 os.system('cls' if os.name == 'nt' else 'clear')
-print("🎹 Пианино готово! Нажимай цифры 1-7.")
-print("Стрелки и другие клавиши свободны!")
+print("Пианино готово! Нажимай цифры 1-7.")
+print("Нажми ESC для выхода.")
 
-while True:
+while running:
     pass
+
+keyboard.unhook_all()
+mixer.quit()
