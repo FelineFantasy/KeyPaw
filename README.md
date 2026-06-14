@@ -61,6 +61,5 @@ Or this:
 Arrows and special keys may also trigger sounds. This is not a bug, it's a feature. Your keyboard is just very musical.
 
 ## 👤 Author
-FelineFantasy
-
-License: MIT
+- **FelineFantasy**
+- **License**: MIT
