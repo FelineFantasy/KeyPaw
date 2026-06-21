@@ -1,15 +1,15 @@
 # 🎹 KeyPaw Piano
 
-A piano that lives in your keyboard. Press keys `1`-`7` to play notes. No extra hardware needed — just your typing fingers.
+A piano that lives in your keyboard. Press keys to play notes. No extra hardware needed - just your typing fingers.
 
 ## 📝 Description
 
-`KeyPaw` turns your keyboard into a musical instrument. Each number key plays a different note. It's like a piano, but without the 88 keys.
+`KeyPaw` turns your keyboard into a musical instrument. Now with 12 notes, sharps, and two octaves!
 
 ### Features:
-- 🎵 7 notes (do, re, mi, fa, sol, lja, si)
+- 🎵 12 notes (including sharps)
 - ⌨️ Uses your keyboard as input
-- 🔊 Plays real `.wav` sounds
+- 🔊 No `.wav` files - sound generated with musicpy
 - 🐱 Zero musical talent required
 
 ## ⚙️ Installation
@@ -24,10 +24,9 @@ pip install -r requirements.txt
 python keypaw.py
 ```
 
-Press keys `1`-`7` to play notes. That's it. No GUI, no menus, just music.
+### Controls
 
-## 📦 Notes
-
+#### Main octave:
 
 | Key | Note |
 | --- | --- |
@@ -38,6 +37,28 @@ Press keys `1`-`7` to play notes. That's it. No GUI, no menus, just music.
 | 5   | Sol |
 | 6   | Lja |
 | 7   | Si  |
+
+#### Higher octave:
+
+| Key | Note |
+| --- | --- |
+| q   | Do  |
+| w   | Re  |
+| e   | Mi  |
+| r   | Fa  |
+| t   | Sol |
+| y   | Lja |
+| u   | Si  |
+
+#### Sharps (black keys):
+
+| Key | Note |
+| --- | --- |
+| Shift+1 | Do# |
+| Shift+2 | Re# |
+| Shift+4 | Fa# |
+| Shift+5 | Sol# |
+| Shift+6 | Lja# |
 
 ## 🎵 Play something
 
