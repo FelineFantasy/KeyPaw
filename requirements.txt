@@ -1,2 +1,2 @@
 keyboard
-pygame
+musicpy
