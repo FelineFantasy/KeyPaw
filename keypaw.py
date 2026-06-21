@@ -1,26 +1,28 @@
 import os
 import sys
 import keyboard
-from pygame import mixer
+from musicpy import *
 
-mixer.init()
-
-do = mixer.Sound('notes/do.wav')
-re = mixer.Sound('notes/re.wav')
-mi = mixer.Sound('notes/mi.wav')
-fa = mixer.Sound('notes/fa.wav')
-sol = mixer.Sound('notes/sol.wav')
-lja = mixer.Sound('notes/lja.wav')
-si = mixer.Sound('notes/si.wav')
-
-keymap = {
-    "1": do,
-    "2": re,
-    "3": mi,
-    "4": fa,
-    "5": sol,
-    "6": lja,
-    "7": si,
+notes = {
+    "1": C4,
+    "2": D4,
+    "3": E4,
+    "4": F4,
+    "5": G4,
+    "6": A4,
+    "7": B4,
+    "!": Cs4,
+    "@": Ds4,
+    "$": Fs4,
+    "%": Gs4,
+    "^": As4,
+    "q": C5,
+    "w": D5,
+    "e": E5,
+    "r": F5,
+    "t": G5,
+    "y": A5,
+    "u": B5,
 }
 
 running = True
@@ -36,19 +38,21 @@ def handle_key(event):
         running = False
         return False
     
-    if event.name in keymap:
-        keymap[event.name].play()
+    if event.name in notes:
+        play(notes[event.name], duration=0.5, wait=False)
     
     return False
 
 keyboard.hook(handle_key)
 
 os.system('cls' if os.name == 'nt' else 'clear')
-print("Пианино готово! Нажимай цифры 1-7.")
+print("Пианино готово! Нажимай клавиши:")
+print("1-7 — обычные ноты")
+print("Shift+1,2,4,5,6 — диезы")
+print("q-w-e-r-t-y-u — вторая октава")
 print("Нажми ESC для выхода.")
 
 while running:
     pass
 
 keyboard.unhook_all()
-mixer.quit()
