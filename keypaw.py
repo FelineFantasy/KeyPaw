@@ -1,5 +1,4 @@
 import os
-import sys
 import keyboard
 from musicpy import *
 
