@@ -4,12 +4,12 @@ A piano that lives in your keyboard. Press keys to play notes. No extra hardware
 
 ## 📝 Description
 
-`KeyPaw` turns your keyboard into a musical instrument. Now with 12 notes, sharps, and two octaves!
+`KeyPaw` turns your keyboard into a musical instrument. Clean, simple, and ready to play!
 
 ### Features:
-- 🎵 12 notes (including sharps)
+- 🎵 7 essential notes (Do-Re-Mi-Fa-Sol-La-Si)
 - ⌨️ Uses your keyboard as input
-- 🔊 No `.wav` files - sound generated with musicpy
+- 🔊 High-quality `.wav` samples powered by pygame
 - 🐱 Zero musical talent required
 
 ## ⚙️ Installation
@@ -33,7 +33,7 @@ python keypaw.py
 
 ### Controls
 
-#### Main octave:
+#### Main Keys:
 
 | Key | Note |
 | --- | --- |
@@ -44,28 +44,6 @@ python keypaw.py
 | 5   | Sol |
 | 6   | Lja |
 | 7   | Si  |
-
-#### Higher octave:
-
-| Key | Note |
-| --- | --- |
-| q   | Do  |
-| w   | Re  |
-| e   | Mi  |
-| r   | Fa  |
-| t   | Sol |
-| y   | Lja |
-| u   | Si  |
-
-#### Sharps (black keys):
-
-| Key | Note |
-| --- | --- |
-| Shift+1 | Do# |
-| Shift+2 | Re# |
-| Shift+4 | Fa# |
-| Shift+5 | Sol# |
-| Shift+6 | Lja# |
 
 ## 🎵 Play something
 
