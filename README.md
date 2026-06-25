@@ -14,9 +14,16 @@ A piano that lives in your keyboard. Press keys to play notes. No extra hardware
 
 ## ⚙️ Installation
 
-```bash
-pip install -r requirements.txt
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com
+   cd KeyPaw
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## 🎮 Usage
 
