@@ -1,6 +1,7 @@
 import os
 import keyboard
 import pygame
+import time
 
 pygame.mixer.init()
 
@@ -39,11 +40,11 @@ def handle_key(event):
 keyboard.hook(handle_key)
 
 os.system('cls' if os.name == 'nt' else 'clear')
-print("🎹 KeyPaw готово! Нажимай 1-7.")
+print("KeyPaw готово! Нажимай 1-7.")
 print("Нажми ESC для выхода.")
 
 while running:
-    pass
+    time.sleep(0.1)
 
 keyboard.unhook_all()
 pygame.mixer.quit()
