@@ -62,10 +62,6 @@ Or this:
 1 1 2 1 4 3 - 1 1 2 1 5 4 - 1 1 7 5 4 3 2 - 6 6 5 4 5 4
 ```
 
-## ⚠️ Known Issues
-
-Arrows and special keys may also trigger sounds. This is not a bug, it's a feature. Your keyboard is just very musical.
-
 ## 👤 Author
 - **FelineFantasy**
 - **License**: MIT
