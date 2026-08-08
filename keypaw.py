@@ -5,23 +5,16 @@ import time
 
 pygame.mixer.init()
 
-do = pygame.mixer.Sound('notes/do.wav')
-re = pygame.mixer.Sound('notes/re.wav')
-mi = pygame.mixer.Sound('notes/mi.wav')
-fa = pygame.mixer.Sound('notes/fa.wav')
-sol = pygame.mixer.Sound('notes/sol.wav')
-lja = pygame.mixer.Sound('notes/lja.wav')
-si = pygame.mixer.Sound('notes/si.wav')
+note_names = ['do', 're', 'mi', 'fa', 'sol', 'lja', 'si']
+notes = {}
 
-notes = {
-    "1": do,
-    "2": re,
-    "3": mi,
-    "4": fa,
-    "5": sol,
-    "6": lja,
-    "7": si,
-}
+for i, name in enumerate(note_names, 1):
+    try:
+        notes[str(i)] = pygame.mixer.Sound(f'notes/{name}.wav')
+    except FileNotFoundError:
+        print(f"Ошибка: файл notes/{name}.wav не найден!")
+        pygame.mixer.quit()
+        exit(1)
 
 running = True
 
