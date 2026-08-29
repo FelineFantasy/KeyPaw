@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+"""
+Virtual piano that plays notes using keyboard keys 1-7.
+"""
+
 import os
 import keyboard
 import pygame
